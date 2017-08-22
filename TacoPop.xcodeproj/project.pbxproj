@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		790FDF131F4CC63F001BE0AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FDF121F4CC63F001BE0AE /* AppDelegate.swift */; };
-		790FDF151F4CC63F001BE0AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FDF141F4CC63F001BE0AE /* ViewController.swift */; };
+		790FDF151F4CC63F001BE0AE /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FDF141F4CC63F001BE0AE /* MainVC.swift */; };
 		790FDF181F4CC63F001BE0AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790FDF161F4CC63F001BE0AE /* Main.storyboard */; };
 		790FDF1A1F4CC63F001BE0AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 790FDF191F4CC63F001BE0AE /* Assets.xcassets */; };
 		790FDF1D1F4CC63F001BE0AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790FDF1B1F4CC63F001BE0AE /* LaunchScreen.storyboard */; };
+		790FDF2B1F4CC848001BE0AE /* DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FDF2A1F4CC848001BE0AE /* DropShadow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		790FDF0F1F4CC63F001BE0AE /* TacoPop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TacoPop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		790FDF121F4CC63F001BE0AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		790FDF141F4CC63F001BE0AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		790FDF141F4CC63F001BE0AE /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		790FDF171F4CC63F001BE0AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		790FDF191F4CC63F001BE0AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		790FDF1C1F4CC63F001BE0AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		790FDF1E1F4CC63F001BE0AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		790FDF2A1F4CC848001BE0AE /* DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropShadow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,63 @@
 		790FDF111F4CC63F001BE0AE /* TacoPop */ = {
 			isa = PBXGroup;
 			children = (
-				790FDF121F4CC63F001BE0AE /* AppDelegate.swift */,
-				790FDF141F4CC63F001BE0AE /* ViewController.swift */,
-				790FDF161F4CC63F001BE0AE /* Main.storyboard */,
-				790FDF191F4CC63F001BE0AE /* Assets.xcassets */,
-				790FDF1B1F4CC63F001BE0AE /* LaunchScreen.storyboard */,
-				790FDF1E1F4CC63F001BE0AE /* Info.plist */,
+				790FDF291F4CC670001BE0AE /* Extensions */,
+				790FDF281F4CC66A001BE0AE /* Protocols */,
+				790FDF261F4CC65B001BE0AE /* Controller */,
+				790FDF251F4CC652001BE0AE /* View */,
+				790FDF241F4CC64A001BE0AE /* Model */,
+				790FDF271F4CC664001BE0AE /* Resources */,
 			);
 			path = TacoPop;
+			sourceTree = "<group>";
+		};
+		790FDF241F4CC64A001BE0AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		790FDF251F4CC652001BE0AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				790FDF161F4CC63F001BE0AE /* Main.storyboard */,
+				790FDF1B1F4CC63F001BE0AE /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		790FDF261F4CC65B001BE0AE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				790FDF141F4CC63F001BE0AE /* MainVC.swift */,
+				790FDF121F4CC63F001BE0AE /* AppDelegate.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		790FDF271F4CC664001BE0AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				790FDF191F4CC63F001BE0AE /* Assets.xcassets */,
+				790FDF1E1F4CC63F001BE0AE /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		790FDF281F4CC66A001BE0AE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				790FDF2A1F4CC848001BE0AE /* DropShadow.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		790FDF291F4CC670001BE0AE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +187,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				790FDF151F4CC63F001BE0AE /* ViewController.swift in Sources */,
+				790FDF151F4CC63F001BE0AE /* MainVC.swift in Sources */,
+				790FDF2B1F4CC848001BE0AE /* DropShadow.swift in Sources */,
 				790FDF131F4CC63F001BE0AE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
