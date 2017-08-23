@@ -13,6 +13,14 @@
 		790FDF1A1F4CC63F001BE0AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 790FDF191F4CC63F001BE0AE /* Assets.xcassets */; };
 		790FDF1D1F4CC63F001BE0AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790FDF1B1F4CC63F001BE0AE /* LaunchScreen.storyboard */; };
 		790FDF2B1F4CC848001BE0AE /* DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FDF2A1F4CC848001BE0AE /* DropShadow.swift */; };
+		790FDF2D1F4CCBD9001BE0AE /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FDF2C1F4CCBD9001BE0AE /* HeaderView.swift */; };
+		790FDF2F1F4CD5BE001BE0AE /* Taco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FDF2E1F4CD5BE001BE0AE /* Taco.swift */; };
+		790FDF311F4DC980001BE0AE /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FDF301F4DC980001BE0AE /* DataService.swift */; };
+		790FDF361F4DCDED001BE0AE /* TacoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FDF341F4DCDED001BE0AE /* TacoCell.swift */; };
+		790FDF371F4DCDED001BE0AE /* TacoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 790FDF351F4DCDED001BE0AE /* TacoCell.xib */; };
+		790FDF391F4DD9A5001BE0AE /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FDF381F4DD9A5001BE0AE /* ReusableView.swift */; };
+		790FDF3B1F4DDBF8001BE0AE /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FDF3A1F4DDBF8001BE0AE /* NibLoadableView.swift */; };
+		790FDF3D1F4DDCE3001BE0AE /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790FDF3C1F4DDCE3001BE0AE /* UICollectionView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		790FDF1C1F4CC63F001BE0AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		790FDF1E1F4CC63F001BE0AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		790FDF2A1F4CC848001BE0AE /* DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropShadow.swift; sourceTree = "<group>"; };
+		790FDF2C1F4CCBD9001BE0AE /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		790FDF2E1F4CD5BE001BE0AE /* Taco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Taco.swift; sourceTree = "<group>"; };
+		790FDF301F4DC980001BE0AE /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		790FDF341F4DCDED001BE0AE /* TacoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TacoCell.swift; sourceTree = "<group>"; };
+		790FDF351F4DCDED001BE0AE /* TacoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TacoCell.xib; sourceTree = "<group>"; };
+		790FDF381F4DD9A5001BE0AE /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		790FDF3A1F4DDBF8001BE0AE /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		790FDF3C1F4DDCE3001BE0AE /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +85,8 @@
 		790FDF241F4CC64A001BE0AE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				790FDF2E1F4CD5BE001BE0AE /* Taco.swift */,
+				790FDF301F4DC980001BE0AE /* DataService.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -78,6 +96,9 @@
 			children = (
 				790FDF161F4CC63F001BE0AE /* Main.storyboard */,
 				790FDF1B1F4CC63F001BE0AE /* LaunchScreen.storyboard */,
+				790FDF2C1F4CCBD9001BE0AE /* HeaderView.swift */,
+				790FDF341F4DCDED001BE0AE /* TacoCell.swift */,
+				790FDF351F4DCDED001BE0AE /* TacoCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -104,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				790FDF2A1F4CC848001BE0AE /* DropShadow.swift */,
+				790FDF381F4DD9A5001BE0AE /* ReusableView.swift */,
+				790FDF3A1F4DDBF8001BE0AE /* NibLoadableView.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -111,6 +134,7 @@
 		790FDF291F4CC670001BE0AE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				790FDF3C1F4DDCE3001BE0AE /* UICollectionView+Ext.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -174,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790FDF371F4DCDED001BE0AE /* TacoCell.xib in Resources */,
 				790FDF1D1F4CC63F001BE0AE /* LaunchScreen.storyboard in Resources */,
 				790FDF1A1F4CC63F001BE0AE /* Assets.xcassets in Resources */,
 				790FDF181F4CC63F001BE0AE /* Main.storyboard in Resources */,
@@ -187,9 +212,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790FDF361F4DCDED001BE0AE /* TacoCell.swift in Sources */,
 				790FDF151F4CC63F001BE0AE /* MainVC.swift in Sources */,
 				790FDF2B1F4CC848001BE0AE /* DropShadow.swift in Sources */,
+				790FDF3B1F4DDBF8001BE0AE /* NibLoadableView.swift in Sources */,
+				790FDF3D1F4DDCE3001BE0AE /* UICollectionView+Ext.swift in Sources */,
+				790FDF391F4DD9A5001BE0AE /* ReusableView.swift in Sources */,
 				790FDF131F4CC63F001BE0AE /* AppDelegate.swift in Sources */,
+				790FDF311F4DC980001BE0AE /* DataService.swift in Sources */,
+				790FDF2F1F4CD5BE001BE0AE /* Taco.swift in Sources */,
+				790FDF2D1F4CCBD9001BE0AE /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

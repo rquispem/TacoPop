@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J72-UJ-bfP">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J72-UJ-bfP" customClass="HeaderView" customModule="TacoPop" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TacoPop" translatesAutoresizingMaskIntoConstraints="NO" id="uNI-0U-hky">
@@ -34,14 +35,37 @@
                                     <constraint firstAttribute="height" constant="90" id="seL-NR-zdm"/>
                                 </constraints>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7zN-5y-PhM">
+                                <rect key="frame" x="16" y="110" width="343" height="537"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UcV-oI-kjh">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7zN-5y-PhM" secondAttribute="bottom" constant="20" id="6vH-5k-H4w"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7zN-5y-PhM" secondAttribute="bottom" constant="20" id="EF2-EA-d8n"/>
                             <constraint firstItem="J72-UJ-bfP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Hhb-e2-oTs"/>
+                            <constraint firstItem="7zN-5y-PhM" firstAttribute="top" secondItem="J72-UJ-bfP" secondAttribute="bottom" constant="20" id="MGA-81-kh6"/>
+                            <constraint firstItem="7zN-5y-PhM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="SFu-km-f0f"/>
+                            <constraint firstItem="7zN-5y-PhM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Y5F-1F-IdH"/>
                             <constraint firstAttribute="trailing" secondItem="J72-UJ-bfP" secondAttribute="trailing" id="af1-lk-MMZ"/>
+                            <constraint firstItem="7zN-5y-PhM" firstAttribute="top" secondItem="J72-UJ-bfP" secondAttribute="bottom" constant="20" id="ni8-dO-Sse"/>
                             <constraint firstItem="J72-UJ-bfP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qUv-wi-KUe"/>
+                            <constraint firstItem="7zN-5y-PhM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="tDD-uA-2hP"/>
+                            <constraint firstItem="7zN-5y-PhM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uLS-YA-srW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="7zN-5y-PhM" id="J4p-kD-mnE"/>
+                        <outlet property="headerView" destination="J72-UJ-bfP" id="p1m-uh-pAx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
